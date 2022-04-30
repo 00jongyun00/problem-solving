@@ -1,7 +1,5 @@
 package easy
 
-import "fmt"
-
 func isPalindrome(x int) bool {
 	sum := 0
 	compare := x
@@ -12,9 +10,4 @@ func isPalindrome(x int) bool {
 		x /= 10
 	}
 	return sum == compare
-}
-
-func main() {
-	x := 121
-	fmt.Println(isPalindrome(x))
 }

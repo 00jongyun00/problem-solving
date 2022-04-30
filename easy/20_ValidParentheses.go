@@ -1,7 +1,5 @@
 package easy
 
-import "fmt"
-
 func isValid(s string) bool {
 	if len(s)%2 != 0 {
 		return false
@@ -27,8 +25,4 @@ func isValid(s string) bool {
 		stack = stack[:l]
 	}
 	return len(stack) == 0
-}
-
-func main() {
-	fmt.Println(isValid("()[]{}"))
 }

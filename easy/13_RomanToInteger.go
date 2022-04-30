@@ -1,9 +1,5 @@
 package easy
 
-import (
-	"fmt"
-)
-
 var roman = map[string]int{
 	"I": 1,
 	"V": 5,
@@ -31,9 +27,4 @@ func romanToInt(s string) int {
 		lastInt = num
 	}
 	return total
-}
-
-func main() {
-	s := "MCMXCIV"
-	fmt.Println(romanToInt(s))
 }
